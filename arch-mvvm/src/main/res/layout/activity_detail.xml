@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.tistory.ykyh.arch_mvvm.viewmodel.DetailViewModel"/>
+
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        tools:context=".view.DetailActivity">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerHorizontal="true"
+            bind:imageUrl="@{viewModel.detailImageUrl}"
+            android:onClick="@{viewModel::showBrower}"/>
+        <TextView
+            android:id="@+id/tvStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ivImage"
+            android:layout_alignParentRight="true"
+            android:text="@{viewModel.detailStar}"
+            tools:text="star:14"/>
+        <TextView
+            android:id="@+id/tvFork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvStar"
+            android:layout_alignParentRight="true"
+            android:text="@{viewModel.detailFork}"
+            tools:text="fork:14"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivImage"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/tvStar"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:text="@{viewModel.detailName}"
+            android:onClick="@{viewModel::showBrower}"
+            tools:text="github name"/>
+
+        <TextView
+            android:id="@+id/tvDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvFork"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="@{viewModel.detailDetail}"
+            tools:text="github detail"/>
+
+    </RelativeLayout>
+</layout>
