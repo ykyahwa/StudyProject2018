@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/arch-mvvm" />
             <option value="$PROJECT_DIR$/arch-original" />
             <option value="$PROJECT_DIR$/materialdesign" />
+            <option value="$PROJECT_DIR$/rxandroid" />
             <option value="$PROJECT_DIR$/test-ui" />
             <option value="$PROJECT_DIR$/test-unittest" />
           </set>

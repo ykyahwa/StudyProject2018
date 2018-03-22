@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/arch-mvvm/arch-mvvm.iml" filepath="$PROJECT_DIR$/arch-mvvm/arch-mvvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/arch-original/arch-original.iml" filepath="$PROJECT_DIR$/arch-original/arch-original.iml" />
       <module fileurl="file://$PROJECT_DIR$/materialdesign/materialdesign.iml" filepath="$PROJECT_DIR$/materialdesign/materialdesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxandroid/rxandroid.iml" filepath="$PROJECT_DIR$/rxandroid/rxandroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-ui/test-ui.iml" filepath="$PROJECT_DIR$/test-ui/test-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-unittest/test-unittest.iml" filepath="$PROJECT_DIR$/test-unittest/test-unittest.iml" />
     </modules>

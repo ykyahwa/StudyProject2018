@@ -1,1 +1,1 @@
-include ':arch-original', ':arch-mvp', ':arch-mvvm', ':activityanimation', ':test-unittest', ':test-ui', ':materialdesign'
+include ':arch-original', ':arch-mvp', ':arch-mvvm', ':activityanimation', ':test-unittest', ':test-ui', ':materialdesign', ':rxandroid'
